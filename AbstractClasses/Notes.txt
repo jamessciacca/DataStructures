@@ -1,5 +1,0 @@
-Cant Create Objects from the Abstact Class
-It has no body just the heading
-It must be public!!!
-The class must be declared abstract.
-If you have an abstract class -> you do not need abstract methods within it.

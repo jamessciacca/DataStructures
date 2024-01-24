@@ -1,0 +1,29 @@
+Cant Create Objects from the Abstact Class
+It has no body just the heading
+It must be public!!!
+The class must be declared abstract.
+If you have an abstract class -> you do not need abstract methods within it.
+You must override all abstract methdos in your sub classes, otherwise you will get a compiler error.
+
+
+Interfaces can have abstract, default, or static methods
+
+In a diagram the dotted line shows implementation of interefaces 
+The solid line shows the extension of other classes.
+
+Interfaces use the IS A relationship
+EX - Fruit is a Apple
+
+Interace VS Inheritance 
+INT is used among unrelated classes, INH is where all classes are related
+
+INT -
+public interface Tossing{
+    public abstract void expand(){
+
+    }
+}
+INT can be used to declare varibales of intergave type, but not objects.
+An INT can extends another INT
+An abstract class cannot extend and Interface.
+
