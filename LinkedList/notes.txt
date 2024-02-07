@@ -1,0 +1,92 @@
+Linked List Notes - 
+
+1) A collection of components called nodes, every node (except the last) contains the address of the next node!
+- The first node is known as the Head, it points to the first node known as the head node.
+
+A node has an info field and a link field.
+Metadata is a node that holds no data within it.
+
+The node class is said to be self referential since it has instance variable link that refers to itself variablelink is a pointer
+
+When two or more pointers point to the same object that is known as Shallow
+
+Basic Operations - 
+Search
+Insert
+Delete
+
+Traversing a list means you step through the nodes of the list!
+Head cannot be used as your traversing variable.
+Instead we use current
+
+CODE SNIPPET - 
+
+current = head;
+while(current != null){
+    //process current
+    current = current.link;
+}
+
+Sysout(current.info + " ") would print the data of the node!
+
+newNode = new Node(); //creates a new node
+newNode.info = 50; //stores 50 in the new node 
+
+In order to delte a node from a linked list we use 2 referecnce variables
+- 1 variable traverses the list to find the node we want to Delete
+- The other variable adjusts tot he link of the node before it s deleted.
+
+
+CODE to build a linked list forward - 
+
+Node buildListForward( )
+{
+Node first, newNode, last;
+int num;
+System.out.println(“Enter integers ending with -999:”);
+num = console.nextInt( );
+first = null;
+while (num != -999)
+{
+newNode = new Node( );
+newNode.info = num;
+newNode.link = null;
+if (first == null)
+{
+first = newNode;
+last = newNode;
+}
+else
+{
+last.link = newNode;
+last = newNode;
+}
+num = console.nextInt( );
+}//end while
+return first;
+}//end buildListForward
+
+
+CODE to build a linked list backwards!
+
+Node buildListBackward( )
+{
+Node first, newNode;
+int num;
+System.out.println(“Enter integers ending with -999:”);
+num = console.nextInt( );
+first = null;
+while (num != -999)
+{
+newNode = new Node( ); //create a node
+newNode.info = num; //store the data in newNode
+newNode.link = first; //put newNode at the beginning of the list
+first = newNode; //update the head of the list
+num = console.nextInt( ); //get the next number
+}
+return first;
+}//end buildListBackward
+
+
+
+
