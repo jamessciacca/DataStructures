@@ -10,7 +10,7 @@ class Node<T>{
     }
 }
 
-class LinkedList<T extends Comparable<T>>{
+public class LinkedList<T extends Comparable<T>>{
 
     Node<T> head;
 
@@ -50,4 +50,3 @@ class LinkedList<T extends Comparable<T>>{
         return smallestElement;
     }
 }
-

@@ -1,0 +1,6 @@
+Doubly Linked Lists
+
+-traversal is in just 1 direction
+-to access previous nodes toy must go to one end of the list and start again.
+-takes extra memory to traverse!
+
